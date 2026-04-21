@@ -1,122 +1,77 @@
-# ubiquitous-octo-waffle
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Offerte Imperdibili</title>
+  <title>Offerte Amazon</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #232f3e;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                  url('https://images.unsplash.com/photo-1515169067865-5387ec356754');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    .hero h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
+    body { margin:0; font-family: Arial; background:#f4f4f4; }
+    header { background:#232f3e; color:white; padding:20px; text-align:center; }
+    .hero { text-align:center; padding:80px 20px; background:#131921; color:white; }
     .btn {
-      background: #ff9900;
-      color: black;
-      padding: 15px 25px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
+      background:#ff9900; padding:15px 25px;
+      text-decoration:none; color:black;
+      font-weight:bold; border-radius:5px;
+      display:inline-block; margin-top:15px;
     }
-    .section {
-      padding: 40px 20px;
-      text-align: center;
-      background: white;
-      margin: 20px;
-      border-radius: 10px;
+    .container { padding:30px; }
+    .products { display:flex; flex-wrap:wrap; justify-content:center; }
+    .product {
+      background:white; margin:15px; padding:20px;
+      border-radius:10px; width:250px; text-align:center;
     }
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .feature {
-      width: 250px;
-      margin: 15px;
-    }
-    footer {
-      background: #232f3e;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 20px;
-    }
+    .product img { width:100%; border-radius:10px; }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Super Offerte Online</h1>
+  <h1>Offerte Imperdibili</h1>
 </header>
 
 <section class="hero">
-  <h2>Scopri Migliaia di Prodotti a Prezzi Incredibili</h2>
-  <p>Qualità, convenienza e spedizione veloce</p>
-  <a href="#" class="btn">Scopri Ora</a>
+  <h2>Scopri le migliori offerte su Amazon</h2>
+  <p>Sconti aggiornati ogni giorno</p>
+  <a href="https://www.amazon.it/?tag=TUO-CODICE" class="btn" target="_blank">
+    Vai alle Offerte
+  </a>
 </section>
 
-<section class="section">
-  <h2>Offerte del Giorno</h2>
-  <p>Approfitta degli sconti fino al 50% su prodotti selezionati.</p>
-</section>
+<div class="container">
+  <h2 style="text-align:center;">🔥 Prodotti Consigliati</h2>
 
-<section class="section">
-  <h2>Perché scegliere noi?</h2>
-  <div class="features">
-    <div class="feature">
-      <h3>🚚 Spedizione Veloce</h3>
-      <p>Ricevi i tuoi ordini in tempi rapidissimi.</p>
+  <div class="products">
+
+    <!-- PRODOTTO 1 -->
+    <div class="product">
+      <img src="https://amzn.to/4tkGn7b" alt="Prodotto">
+      <h3>Cuffie Bluetooth</h3>
+      <p>Audio di alta qualità e lunga durata</p>
+      <a href="https://amzn.to/4tkGn7b"
+         class="btn" target="_blank">
+         Acquista su Amazon
+      </a>
     </div>
-    <div class="feature">
-      <h3>🔒 Pagamenti Sicuri</h3>
-      <p>Transazioni protette e affidabili.</p>
+
+    <!-- PRODOTTO 2 -->
+    <div class="product">
+      <img src="https://amzn.to/4tqDL7O" alt="Prodotto">
+      <h3>Smartwatch</h3>
+      <p>Shampoo e benessere</p>
+      <a href="https://amzn.to/4tqDL7O"
+         class="btn" target="_blank">
+         Acquista su Amazon
+      </a>
     </div>
-    <div class="feature">
-      <h3>⭐ Recensioni Verificate</h3>
-      <p>Acquista con fiducia grazie alle opinioni reali.</p>
+
+    </a>
     </div>
+
   </div>
-</section>
+</div>
 
-<section class="section">
-  <h2>Prodotti più venduti</h2>
-  <p>Scopri cosa acquistano migliaia di clienti ogni giorno.</p>
-</section>
-
-<section class="section">
-  <h2>Non perdere le offerte</h2>
-  <p>Iscriviti per ricevere sconti esclusivi direttamente via email.</p>
-  <input type="email" placeholder="Inserisci la tua email" style="padding:10px; width:250px;">
-  <br><br>
-  <a href="#" class="btn">Iscriviti</a>
-</section>
-
-<footer>
-  <p>&copy; 2026 Tutti i diritti riservati</p>
+<footer style="background:#232f3e;color:white;text-align:center;padding:20px;">
+  <p>Come affiliato Amazon, guadagno dagli acquisti idonei.</p>
 </footer>
 
 </body>
